@@ -10,7 +10,7 @@
 
 ### 4. References
 
-[1] Fast.ai (http://course.fast.ai/)  
+[1] [Fast.ai](http://course.fast.ai/)  
 [2] CS231N (http://cs231n.github.io/)  
 [3] CS224D (http://cs224d.stanford.edu/syllabus.html)  
 [4] Hands on Machine Learning (https://github.com/ageron/handson-ml)  
