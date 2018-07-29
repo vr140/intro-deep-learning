@@ -16,15 +16,6 @@ https://github.com/kuleshov/cs228-material/blob/master/tutorials/python/cs228-py
 3) Simply download the requirements.txt file to your local computer and run:
 `pip install -r requirements.txt`
 
-## (Beta) Binder installation Instructions
-
-Mybinder.org is a new initiative to allow people to run Jupyter notebooks
-on the web. A binder is set up at:
-https://mybinder.org/v2/gh/vr140/intro-deep-learning/master
-
-NOTE: The binder is still in beta and may not work. For the most reliable environment,
-please see "Local Installation Instructions" above.
-
 ## AWS Installation Instructions
 
 1) Follow instructions in https://medium.com/@DJVJallday/a-how-to-on-deep-reinforcement-learning-setup-aws-with-keras-tensorflow-openai-gym-and-jupyter-88bc0cc67e02  
@@ -40,3 +31,22 @@ NOTE: You can skip the testing of OpenAI in step 20. This is only needed for rei
 
 python -c "import tensorflow as tf; print(tf.__version__)"
 # you should see version x.y.z
+
+
+## Viewing notebooks online in nbviewer
+
+If you do not want to use Github but rather Jupyter's nbviewer, visit
+https://nbviewer.jupyter.org/github/vr140/intro-deep-learning/tree/master/
+
+Note that you can not actually run the notebooks here but rather just view them. To run
+them in the web, you'll need the Binder instructions section.
+
+## (Beta) Binder Instructions
+
+Mybinder.org is a new initiative to allow people to run Jupyter notebooks
+on the web. A binder is set up at:
+https://mybinder.org/v2/gh/vr140/intro-deep-learning/master
+
+NOTE: The binder is still in beta and may not work. For the most reliable environment,
+please see "Local Installation Instructions" above.
+
