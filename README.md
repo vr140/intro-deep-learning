@@ -13,7 +13,7 @@ https://github.com/kuleshov/cs228-material/blob/master/tutorials/python/cs228-py
 
 2) Install pip
 
-3) Simply download the requirements.txt file to your local computer and run:
+3) Simply download the requirements.txt file to your local computer and run:<br/>
 `pip install -r requirements.txt`
 
 ## AWS Installation Instructions
@@ -24,14 +24,13 @@ NOTE: You can skip the testing of OpenAI in step 20. This is only needed for rei
 
 2) After completing all the installation instructions, do the optional instructions noted on the page:
 
-`sudo apt-get install libcupti-dev`  # needed for tensorflow
-`sudo pip install -U tensorflow`   # Python 2.7 (for python3 instructions, see https://www.tensorflow.org/install/install_linux#InstallingNativePip)
+`sudo apt-get install libcupti-dev`  # needed for tensorflow<br/>
+`sudo pip install -U tensorflow`   # Python 2.7 (for python3 instructions, see https://www.tensorflow.org/install/install_linux#InstallingNativePip)<br/>
 
 3) Use pip list to show the packages installed on the system. Validate the install and test the version:
 
 python -c "import tensorflow as tf; print(tf.__version__)"
-# you should see version x.y.z
-
+<pre># you should see version x.y.z</pre>
 
 ## Viewing notebooks online in nbviewer
 
