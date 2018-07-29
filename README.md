@@ -29,7 +29,7 @@ NOTE: You can skip the testing of OpenAI in step 20. This is only needed for rei
 
 3) Use pip list to show the packages installed on the system. Validate the install and test the version:
 
-python -c "import tensorflow as tf; print(tf.__version__)"
+<pre>python -c "import tensorflow as tf; print(tf.__version__)"</pre>
 <pre># you should see version x.y.z</pre>
 
 ## Viewing notebooks online in nbviewer
