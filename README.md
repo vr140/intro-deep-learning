@@ -32,6 +32,47 @@ NOTE: You can skip the testing of OpenAI in step 20. This is only needed for rei
 <pre>python -c "import tensorflow as tf; print(tf.__version__)"
 # you should see version x.y.z</pre>
 
+## Serving models via Tensorflow Serving
+
+For more detailed instructions, see https://www.tensorflow.org/serving/serving_basic
+
+Below are the basic ones
+
+1) Install docker
+
+See https://docs.docker.com/install/
+
+Start up the application once it's installed.
+
+2) Set up REST API hook
+<pre>
+docker run -p 8501:8501 \
+-v /Users/vrajaram/workspace/intro-deep-learning/saved_model_half_plus_three:/models/saved_model_half_plus_three \
+-e MODEL_NAME=saved_model_half_plus_three -t tensorflow/serving &
+</pre>
+
+3) Send request to the predict API
+
+<pre>curl -d '{"instances": [1.0, 2.0, 5.0]}' -X POST http://localhost:8501/v1/models/saved_model_half_plus_three:predict</pre>
+
+
+You should see:
+<pre>
+{
+  "predictions": [3.5, 4.0, 5.5]
+}
+</pre>
+
+See more at https://www.tensorflow.org/serving/docker
+
+4) To kill the container do
+
+`docker kill $(docker ps -q)`
+
+To remove the images:
+
+`docker rmi $(docker images -q)`
+
 ## Viewing notebooks online in nbviewer
 
 If you do not want to use Github but rather Jupyter's nbviewer, visit
