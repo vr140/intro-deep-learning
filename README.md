@@ -73,6 +73,10 @@ To remove the images:
 
 `docker rmi $(docker images -q)`
 
+
+5) To save your own models and use in REST API, see:
+https://www.tensorflow.org/serving/serving_basic
+
 ## Viewing notebooks online in nbviewer
 
 If you do not want to use Github but rather Jupyter's nbviewer, visit
